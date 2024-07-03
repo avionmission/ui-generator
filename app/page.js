@@ -51,39 +51,9 @@ export default function Home() {
     }
   }
 
-  const rawHtmlString = `          
-    
-<div className="flex flex-col gap-3 px-5 py-6 rounded shadow bg-white w-full max-w-[500px]">
-  <h3 className="text-3xl font-bold">Stay in the loop</h3>
-
-  <p className="text-sm">
-    Get our latest updates, offers, and exclusive content delivered right to your
-    inbox.
-  </p>
-
-  <form className="flex flex-col gap-2">
-    <label className="flex flex-row items-center gap-2">
-      <input
-        type="email"
-        placeholder="Your email address"
-        className="px-3 py-2 border border-gray-300 rounded outline-none focus:border-blue-500"
-      />
-      <button
-        type="submit"
-        className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
-      >
-        Subscribe
-      </button>
-    </label>
-  </form>
-</div>
-  `;
-
-  const htmlString = parse(rawHtmlString);
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12">
-      <div className="z-10 max-w-5xl w-full flex-col items-center justify-center text-sm lg:flex">
+    <main className="flex min-h-screen flex-col items-center p-12">
+      <div className="max-w-5xl w-full flex-col items-center justify-center text-sm lg:flex">
         <p className='text-3xl mb-4 font-bold text-gray-600'>UI Generator</p>
         <div className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-md bg-transparent overflow-hidden">
           <input
@@ -108,7 +78,7 @@ export default function Home() {
         </div>
 
         <div className='bg-transparent rounded mt-7 p-2 flex justify-center'>
-         
+          {/* Paste code to see rendered css */}
         </div>
 
       </div>
